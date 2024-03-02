@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     fetchInfo();
   }, [])
-
+//fuck me
   //sa return ide kod koji se renderuje u tagu code ide stranica ili dio a sa viticastim zagradama podatci iz data setData
   return (
     <div className="App">
