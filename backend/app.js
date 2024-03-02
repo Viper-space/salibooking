@@ -1,11 +1,11 @@
 import express from "express";
 import bodyParser from 'body-parser';
+import increase from "./middleware/increase";
 
 //svaka express aplikacija pocinje ovako
 const app = express();
 
 var number = 1;
-
 
 //navodi se koristenje bodyParser koristi se za razne JSON stvari
 app.use(bodyParser.urlencoded({ extended: false }));

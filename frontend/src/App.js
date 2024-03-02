@@ -10,8 +10,8 @@ function App() {
   const [data, setData] = useState({});
 
   //funkcija za dobijanje podataka od URL moze se koristiti i za slanje samo umjesto GET ide SET
-  const fetchInfo = () => {
-    return fetch(url, {
+  const fetchInfo = async () => {
+    return await fetch(url, {
       method: "GET"
     })
       .then((res) => res.json())
@@ -27,6 +27,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <button onClick={fetchInfo}>
+          Neki button
+        </button>
+
         <p>
           Edit <code>src/App.js</code> and save to reload. Number is:
           {JSON.stringify(data.value)}
@@ -36,7 +40,7 @@ function App() {
           Just proving a point with {JSON.stringify(data.text)}
         </p>
       </header>
-    </div>
+    </div >
   );
 }
 
