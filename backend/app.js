@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from 'body-parser';
-import increase from "./middleware/increase";
 
 //svaka express aplikacija pocinje ovako
 const app = express();
