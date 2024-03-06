@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'; // Ensure this path matches where your Header.css file is located.
-import SearchBar from './SearchBar'; // Adjust the path if necessary
+//import SearchBar from './SearchBar'; // Adjust the path if necessary
 
 const Header = () => {
   return (
@@ -13,12 +13,7 @@ const Header = () => {
       </div>
     </div>
   );
-  {<div className="header" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  {/* Existing header content */}
-  <SearchBar /> {/* This adds the search bar to your header */}
-  {/* Any other header content */}
-</div>
-}
+
 };
 
 export default Header;
