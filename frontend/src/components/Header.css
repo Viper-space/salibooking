@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f5f5f5;
+	padding: 10px;
+}
+
+.logo img {
+	max-width: 100px;
+	height: auto;
+}
+
+.signin-button button {
+	background-color: #0074d9;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	cursor: pointer;
+}
