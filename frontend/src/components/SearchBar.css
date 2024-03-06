@@ -1,0 +1,71 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 30px; /* Increased border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    gap: 10px; /* Adds space between children */
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-right: 8px;
+    border: 2px solid #eee;
+    border-radius: 15px; /* Rounded corners for input fields */
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .search-input:focus {
+    border-color: #007BFF;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 15px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Adjustments for tablets */
+@media (max-width: 768px) {
+    .search-bar {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 20px;
+    }
+  
+    .search-input,
+    .search-button {
+      width: 100%; /* Make inputs and button take the full width */
+      margin-bottom: 10px; /* Add some space between elements */
+    }
+  
+    .search-button {
+      width: auto; /* Adjust button width as per content */
+    }
+  }
+  
+  /* Adjustments for smaller devices like phones */
+  @media (max-width: 480px) {
+    .search-bar {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .search-input,
+    .search-button {
+      width: 100%;
+      margin-bottom: 8px; /* Reduce margin for even smaller screens */
+    }
+  }
+  
+
+  
