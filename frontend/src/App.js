@@ -1,7 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react';
-
+import Header from './components/Header' ;
 function App() {
   //url gdje se API nalazi
   const url = "http://localhost:5000/test";
@@ -42,6 +42,17 @@ function App() {
       </header>
     </div >
   );
-}
+  {
+  function App() {
+    return (
+      <div className="App">
+        <Header />
+        {/* Other components like your main content go here */}
+      </div>
+    );
+  }
+  
 
+}
+ }
 export default App;
